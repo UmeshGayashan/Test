@@ -1,10 +1,16 @@
 import sys
 
+def cat():
+    print("viksfbso")
+
 def default():
     print("Hello")
 
 def main():
-    default()
+    if sys.argv[1] == 'cat':
+        cat()
+    else:
+        default()
 
-if _name_=='_main_':
+if __name__=='__main__':
     main()
